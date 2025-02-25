@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="heading">Weather App</h1>
+        <div class="search-box">
+            <input class="city-input" type="text" placeholder="Search for a city">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="weather-container">
+            <img src="clouds.png" class="weather-image">
+            <div class="weather-info">
+                <h1 class="temp-text">--°C</h1>
+                <h3 class="condition">Condition</h3>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="humidity">
+                <img src="humidity.png" alt="Humidity Icon">
+                <p class="hum">--%<br>Humidity</p>
+            </div>
+            <div class="wind">
+                <img src="wind.png" class="wind-icon" alt="Wind Icon">
+                <p class="windspeed">-- km/h <br>Winds</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
